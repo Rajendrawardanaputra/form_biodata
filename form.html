@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir BIodata</title>
+</head>
+<style>
+  input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #f9004d;
+}
+div {
+  border-radius: 5px;
+  background-color: #ccc;
+  padding: 20px;
+}
+</style>
+<body>
+    <h3>Silahkan isi formulir berikut ini</h3>
+    <div>
+      <form action="form.php">
+        <label for="fname">Nama :</label>
+    <input type="text" id="fname" name="Nama" placeholder="Your name..">
+    <tr>
+      <td>Jenis Kelamin</td>
+      <td>:</td>
+      <td><select>
+      <option></option> 
+      <option>Laki Laki</option>
+      <option>Perempuan</option>
+      </select></td>
+      </tr>
+
+      <tr>
+        <td>Agama</td>
+        <td>:</td>
+        <td><select>
+        <option></option> 
+        <option>Islam</option>
+        <option>Kristen</option>
+        <option>Buddha</option>
+        <option>Hindu</option>
+        <option>Konghucu</option>
+        
+        </select></td>
+        </tr>
+        <label for="alamat">Alamat :</label>
+    <input type="text" id="alamat" name="alamat" placeholder="Ketik alamatmu..">
+
+    <label for="tmpt">Tempat Lahir :</label>
+    <input type="text" id="tmpt" name="tempat lahir" placeholder="Ketik tempat lahirmu..">
+
+    <label for="tanggal">Tanggal Lahir :</label> 
+    <input type="date" id="tanggal" name="tanggal" >
+    <br>
+    <br>
+
+    <label for="hobi">Hobi :</label>
+    <input type="text" id="hobi" name="hobi" placeholder="Ketik hobimu..">
+
+    <label for="cita">Cita Cita :</label>
+    <input type="text" id="cita" name="cita" placeholder="ketik cita citamu..">
+    <br>
+    <br>
+    <label for="usia">Usia :</label>
+    <input type="number" id="usia" name="usia" placeholder="Pilih usiamu..">
+  <br>
+  <br>
+    <label for="asl">Asal Sekolah :</label>
+    <input type="text" id="asl" name="asl" placeholder="Ketik asal sekolahmu..">
+  </form>
+    </div>
+    <input type="submit" value="Submit">
+</body>
+</html>
